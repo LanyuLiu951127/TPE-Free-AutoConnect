@@ -15,7 +15,7 @@
 - 🤖 **完全自動化 (Zero-Click Login)**: 透過 Selenium 4 自動完成 Captive Portal 網頁導向與登入驗證。
 - 📊 **精緻系統匣看板 (Mini Dashboard)**: 在工作列右下角的 Wi-Fi 圖示懸停，即可即時查看連線 SSID、訊號強度、即時上/下傳速度與連線經過時間。
 - 🔌 **硬體級網卡連動 (Hardware Sync)**: 獨家結合 Windows Runtime (WinRT) API，系統匣右鍵選單的「暫停/啟用」能直接實體開關 Windows Wi-Fi 網卡。
-- 👻 **終極無頭模式 (Ultimate Headless)**: 結合 `--headless=new` 與超邊界視窗座標隱藏技術，支援 Chrome/Edge/Firefox，保證 100% 靜音背景執行，絕不彈出干擾視窗。
+- 👻 **終極無頭模式 (Ultimate Headless)**: 內附一鍵登錄檔修改腳本，徹底封印 Windows 內建的 Captive Portal 彈出網頁，結合 Selenium 隱形參數，保證 100% 靜音背景執行。
 - 🛡️ **強健的守護機制 (Robust Daemon)**: 包含單一實體鎖 (Singleton Lock) 防止程式多開，以及智慧偵測 2 小時強制斷線並自動重連。
 
 ---
@@ -65,6 +65,7 @@
 ├── Setup_AutoConnect.py         # 環境與依賴自動安裝腳本
 ├── enable_wifi.ps1              # WinRT 實體開啟網卡腳本 (無須管理員權限)
 ├── disable_wifi.ps1             # WinRT 實體關閉網卡腳本 (無須管理員權限)
+├── 完全隱藏Win11內建連線視窗.bat # 封印 Windows 內建瀏覽器彈出功能的登錄檔腳本
 ├── 啟動台北公眾WiFi自動連線.vbs    # 背景靜默啟動器
 └── 停止台北公眾WiFi自動連線.bat    # 背景進程清理器
 ```

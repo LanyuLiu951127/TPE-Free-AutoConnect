@@ -261,7 +261,6 @@ def get_driver():
     # 嘗試使用 Chrome
     try:
         options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
         options.add_argument('--headless=new')  # 新版 Chromium 核心強制要求
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
