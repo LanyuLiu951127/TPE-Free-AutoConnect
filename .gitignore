@@ -1,0 +1,17 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+TPE_FreeWifiAutoConnect.log
+
+# VS Code
+.vscode/
+
+# Desktop Shortcuts
+*.vbs
+*.bat
+*.lnk
